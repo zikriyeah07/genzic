@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genzic</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.svg" alt="Homepage">
+                    </a>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#services" class="smoothscroll">What We Do</a></li>
+                        <li><a href="#works" class="smoothscroll">Our Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Get In Touch</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/Genzic0/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                            <!-- <span class="screen-reader-text">Facebook</span> -->
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a target="_blank" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                           <span style="height: 1px; width: auto;"> <img height="5px" src="./images/icons8-whatsapp.svg" alt="">
+                           </span><span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/gen_zic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                            <span class="screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a target="_blank" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20.66,6.98c-0.894-1.533-2.107-2.747-3.641-3.64C15.486,2.447,13.813,2,12,2S8.514,2.447,6.98,3.34 C5.447,4.233,4.233,5.447,3.34,6.98S2,10.187,2,12s0.446,3.487,1.34,5.02c0.894,1.534,2.107,2.747,3.641,3.64 C8.514,21.553,10.187,22,12,22s3.486-0.447,5.02-1.34c1.533-0.893,2.747-2.106,3.641-3.64C21.554,15.487,22,13.813,22,12 S21.554,8.513,20.66,6.98z M12,3.66c2,0,3.772,0.64,5.32,1.919c-0.92,1.174-2.286,2.14-4.1,2.9c-1.002-1.813-2.088-3.327-3.261-4.54 C10.641,3.753,11.319,3.66,12,3.66z M5.51,6.8c0.754-0.947,1.656-1.686,2.711-2.22c1.212,1.201,2.325,2.7,3.34,4.5 c-2,0.6-4.114,0.9-6.341,0.9c-0.573,0-1.006-0.013-1.3-0.04C4.227,8.793,4.757,7.747,5.51,6.8z M3.66,12 c0-0.054,0.003-0.12,0.01-0.2c0.007-0.08,0.01-0.146,0.01-0.2c0.254,0.014,0.641,0.02,1.161,0.02c2.666,0,5.146-0.367,7.439-1.1 c0.187,0.373,0.381,0.793,0.58,1.26c-1.32,0.293-2.674,1.006-4.061,2.14S6.4,16.247,5.76,17.5C4.36,15.913,3.66,14.08,3.66,12z M12,20.34c-1.894,0-3.594-0.587-5.101-1.759C7.5,17.394,8.423,16.259,9.67,15.18c1.246-1.08,2.483-1.753,3.71-2.02 c0.772,2.133,1.293,4.339,1.56,6.62C13.966,20.153,12.986,20.34,12,20.34z M19.08,16.38c-0.666,1.066-1.526,1.94-2.58,2.621 c-0.24-2.08-0.7-4.107-1.379-6.081c0.932-0.066,1.765-0.1,2.5-0.1c0.799,0,1.686,0.034,2.659,0.1 C20.146,14.16,19.746,15.313,19.08,16.38z M17.84,11.38c-1.16,0-2.233,0.047-3.22,0.14c-0.254-0.653-0.48-1.193-0.68-1.62 c2.066-0.906,3.532-2.006,4.399-3.3c1.2,1.414,1.854,3.027,1.96,4.84C19.487,11.4,18.667,11.38,17.84,11.38z"></path></svg>
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row">
+                <div class="column">
+                    <div class="s-intro__top-block">
+                        <span class="s-intro__bg"></span>
+
+                        <h1 class=" text-blue-600 s-intro__text">
+                            We're a <span style="font-style: italic;"> creative group</span> <br>
+                            of people who design <br>
+                            influential brands and <br>
+                            digital experiences<span>.</span>
+                        </h1>
+
+                        <a href="#services" class="s-intro__scroll-down smoothscroll">
+                            <span>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(180deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-intro__about-wrap">
+                <div class="column s-intro__about">
+                    <h2 class="s-intro__about-title">Hello, We Are <span style="color: #C966F4;" >Genzic</span> .</h2>
+
+                    <p>
+                        From pixel-perfect designs to dynamic videos and high-performance websites—We bring your vision to life! <br> 
+                        At <span style="color: #C966F4;" >Genzic</span> , we don’t just create—we innovate. Whether it’s eye-catching graphics, engaging videos, or websites that convert, we craft digital experiences that leave a lasting impact.
+                        <br><br>
+                         <span style="text-transform: uppercase;font-weight:900;color: #7d07af;" >Services We Offer:</span>
+                        <br>
+                        🎨 Graphic Design – Social Media Posts,Business Profile and Everything visual. <br>
+                        🎬 Video Editing – Professional Edits, Reels, ads,Documentry and Cinematic Storytelling. <br>
+                        💻 Web Development – Sleek, responsive websites that showcase your Business. <br>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+                
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=50><span>50</span>+</div>
+                    <h5>Happy Customers</h5>
+                    <p>
+                        Bringing brands to life with stunning designs, engaging videos, and high-performance websites.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=70><span>70</span>+</div>
+                    <h5>Projects Completed</h5>
+                    <p>
+                        From sleek websites to viral social media content, we deliver results that matter.
+                     </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=50><span>50</span>+</div>
+                    <h5>Designs Created</h5>
+                    <p>
+                        Logos, social media posts, brand kits—our creativity knows no limits.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=100><span>100</span>+</div>
+                    <h5>Hours of Editing</h5> 
+                    <p>
+                        Crafting visually compelling videos and graphics with precision and creativity.
+                    </p>
+                </div>
+    
+            </div> <!-- end about-stats -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # services
+        ================================================== -->
+        <section id="services" class="s-services target-section">
+
+            <div class="row section-header has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle" style="color: rgb(102, 102, 102);">What We Do</h3>
+                    <h1 class="text-display-title">
+                        We’ve got everything you <br>
+                        need to launch and grow <br>
+                        your business
+                    </h1>
+                </div>
+            </div> <!-- end section-header -->
+    
+            <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--product-design"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Product Design</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                        Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                        Sunt suscipit voluptas ipsa in tempora esse soluta sint aliquam rhoncus elit.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--branding"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Branding</h3>
+                        <p>Your brand is more than a logo—it’s an experience, a feeling, and a story that connects with your audience. At Genzic, we help businesses craft a strong and memorable brand identity that stands the test of time.
+                            Creating such graphics and pixels that resonates with your brand and make a connection with viewers.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--frontend"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Website Development</h3>
+                        <p>Your website isn’t just a URL—it’s your brand’s online identity. We build sleek, responsive, and high-performance websites that not only look great but also drive results with positive outcome.
+
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--research"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Product Shoots</h3>
+                        <p> Transform your brand with stunning product shots! Get a professional photoshoot on us—free for a limited time!
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--illustration"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Digital Marketing</h3>
+                        <p>Boost your brand with expert digital marketing! Let us drive your success with tailored campaigns—get started today.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">E-Commerce</h3>
+                        <p>Transform Your Online Presence with Tailored E-Commerce Solutions. From seamless store setup to strategic growth, we help your business thrive in the digital marketplace.
+                        </p>
+                    </div>
+                </div>
+    
+            </div> <!-- end services-list -->
+
+        </section> <!-- end s-services -->
+
+
+        <!-- ## works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row section-header section-header--dark has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Recent Works</h3>
+                    <h1 class="text-display-title">Here are some of our favorite projects we have done lately. Feel free to  check them out.</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row folio-list block-lg-one-third block-tab-one-half block-stack-on-550 collapse" data-animate-block>
+
+              
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-minimalismo.jpg" title="Clothing Brand" data-size="1050x700">
+                                <img src="images/portfolio/minimalismo.jpg" 
+                                     srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Logo Design</div>
+                            <h4 class="folio-item__title">Eleganza</h4>
+                        </div>
+                        <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a> -->
+                        <div class="folio-item__caption">
+                            <p>We designed a sophisticated and stylish logo for Eleganza, a clothing brand that embodies elegance and modern fashion. The color palette features a refined combination of dark blue and skin tone, creating a timeless and luxurious feel. Our design approach focused on aligning the brand’s identity with its target audience, ensuring a strong and memorable visual presence.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-skaterboy.jpg" Title="Daastan Club Website" data-size="1050x700">
+                                <img src="images/portfolio/skaterboy.jpg" 
+                                     srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Website Development</div>
+                            <h4 class="folio-item__title">Daastan Club</h4>
+                        </div>
+                        <a href="https://daastanclub.com/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>We developed a custom-coded website for Daastan Club using basic coding. The website was designed from the ground up to provide a seamless user experience with a clean and engaging interface. By focusing on performance, responsiveness, and aesthetics, we created a platform that effectively represents the club’s vision and activities.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-rucksack.jpg" title="Signature by London Star" data-size="1050x700">
+                                <img src="images/portfolio/rucksack.jpg" 
+                                     srcset="images/portfolio/rucksack.jpg 1x, images/portfolio/rucksack@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Social Media Post</div>
+                            <h4 class="folio-item__title">London Star</h4>
+                        </div>
+                        <a href="https://www.londonstar.online/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>At Genzic, we crafted sleek and professional social media visuals for London Star Perfumes, ensuring a clean, modern aesthetic that reflects the brand's luxury identity. From captivating product showcases to high-end promotional designs, our work enhances brand presence and engages the target audience effectively.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="24K Gold" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg" 
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Social Media Post</div>
+                            <h4 class="folio-item__title">London Star</h4>
+                        </div>
+                        <a href="https://www.londonstar.online/" title="Project Link" class="folio-item__project-link">
+                            Project Link
+                        </a>
+                        <div class="folio-item__caption">
+                            <p>At Genzic, we crafted sleek and professional social media visuals for London Star Perfumes, ensuring a clean, modern aesthetic that reflects the brand's luxury identity. From captivating product showcases to high-end promotional designs, our work enhances brand presence and engages the target audience effectively.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-tulips.jpg" title="Peshawar Lyceum School" data-size="1050x700">
+                                <img src="images/portfolio/tulips.jpg" 
+                                     srcset="images/portfolio/tulips.jpg 1x, images/portfolio/tulips@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Digital Marketing</div>
+                            <h4 class="folio-item__title">Peshawar Lyceum School </h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>At Genzic, we managed the digital marketing for Peshawar Lyceum School, creating strategic campaigns to enhance their online presence and engagement. From social media management to targeted ad campaigns, we delivered compelling visuals and content that effectively connected with parents and students.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg" 
+                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Graphic Design </div>
+                            <h4 class="folio-item__title">ELeganza</h4>
+                        </div>
+                        <a href="#" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p> We designed sleek and stylish social media visuals for Eleganza Clothing, capturing the brand's essence of elegance and modern fashion. Our team created high-quality graphics that showcased their premium collections with a clean and engaging aesthetic, ensuring a strong online presence.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-grayscale.jpg" title="Discover Pakistan" data-size="1050x700">
+                                <img src="images/portfolio/grayscale.jpg" 
+                                     srcset="images/portfolio/grayscale.jpg 1x, images/portfolio/grayscale@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Documentry</div>
+                            <h4 class="folio-item__title">Daastan Club</h4>
+                        </div>
+                        <a href="https://youtu.be/m1FS1Rpy7H0?si=7fCt6XjpBBH2-FUI" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>At Genzic, we produced a captivating documentary for Daastan Club, the leading travel agency in Khyber Pakhtunkhwa. Titled "Discover Pakistan," this documentary takes viewers on an unforgettable journey through Pakistan’s breathtaking landscapes, rich culture, and hidden gems.
+
+                                From the towering peaks of the north to the vibrant traditions of local communities, our production highlights the beauty of travel and adventure. With stunning visuals and immersive storytelling, this project reflects Daastan Club's passion for creating extraordinary travel experiences.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shutterbug.jpg" title="The luxury Brand London Star" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" 
+                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Website Development</div>
+                            <h4 class="folio-item__title">London Star</h4>
+                        </div>
+                        <a target="_blank" href="https://www.londonstar.online/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>At Genzic, we developed a sleek and fully functional mobile responsive E-commerce website for London Star, a luxury perfume brand. Built on WordPress and WooCommerce, the website offers a seamless shopping experience with a modern design, smooth navigation, and secure payment integration. Designed to reflect the brand’s premium identity, the website ensures an effortless and engaging user experience, making online shopping for **London Star’s** exquisite fragrances both convenient and enjoyable.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-fuji.jpg" title="Company Profile" data-size="1050x700">
+                                <img src="images/portfolio/fuji.jpg" 
+                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Company Profile</div>
+                            <h4 class="folio-item__title">ZH Consultant</h4>
+                        </div>
+                        <a target="_blank" href="https://www.canva.com/design/DAGX41wRHKs/6XKcGykZbF7rqsZeQvgJUw/view?utm_content=DAGX41wRHKs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h87d1867f7a" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>ZH Consultant is a consultancy firm specializing in assisting international students with university admissions in China. We designed and showcased their company profile with a strong focus on high-quality graphics, a cohesive theme, and a professional presentation. By ensuring visual consistency and attention to detail, we created a standout profile that not only enhances their brand identity but also builds trust with potential clients.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+    
+            </div> <!-- folio-list -->
+
+            <div class="row clients-outer" data-animate-block>
+                <div class="column lg-12">
+
+                    <h3 class="text-clients-title" data-animate-el>
+                        We've had the priveledge with working with <br> 
+                        some of the largest and most iconic brands
+                    </h3>
+
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/1.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/5.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/6.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/3.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/7.svg" /></a>
+                            
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/deans city.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/8.svg" /></a>
+                            
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="./images/icons/clients/4.svg" /></a>
+                          
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div> <!-- end clients -->
+
+                </div> <!-- end column -->
+            </div> <!-- end clients-outer -->
+
+            <div class="video-block">
+                <span class="video-block__bg-left"></span>
+                <span class="video-block__bg-right"></span>
+
+                <div class="video-block__content">
+                    <a href="https://youtu.be/m1FS1Rpy7H0?si=2FNuYTAuI2y-XwzQ" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                    </a>
+
+                    <p class="video-caption">
+                       Click to Watch Video
+                    </p>
+                </div>
+            </div> <!-- end video-block -->
+
+            <div class="row testimonials" data-animate-block>
+                <div class="column lg-12">
+    
+                    <div class="swiper-container testimonial-slider" data-animate-el>
+    
+                        <div class="swiper-wrapper">
+
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/userimage.png" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Ahmad Mujtaba</strong>
+                                        <span>CEO, Daastan Club</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    "Working with Genzic has been an outstanding experience. Their team brought our vision to life with a stunning documentary for Daastan Club, capturing the essence of travel and adventure in Pakistan like never before. The "Discover Pakistan" documentary showcased breathtaking visuals and compelling storytelling, truly reflecting our brand's spirit.
+
+                                    Beyond the documentary, Genzic also played a key role in enhancing our online presence with a professional and engaging website. Their dedication, creativity, and technical expertise have elevated our brand, making it more accessible to travelers. We highly recommend Genzic for anyone looking for high-quality media production, branding, and digital solutions."
+                                 </p>
+                            </div> <!-- end testimonial-slider__slide -->
+            
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/userimage.png" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Hassan Mustafa</strong>
+                                        <span>CEO, Peshawar Lyceum</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    Genzic has been instrumental in enhancing our school’s digital presence. Their team created visually appealing and engaging social media graphics, perfectly aligning with our brand identity. Through their strategic digital marketing efforts, we were able to reach a wider audience and effectively connect with students and parents.
+
+                                    Their creativity, professionalism, and attention to detail truly set them apart. We highly appreciate their dedication and look forward to working with them again in the future."
+
+                                </p>
+                            </div> <!-- end testimonial-slider__slide -->
+            
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/userimage.png" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Omer Wakeel</strong>
+                                        <span>CEO, Wakeel Son's</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    Working with Genzic has been an exceptional experience. Their team provided us with outstanding graphic designs and digital marketing solutions that perfectly captured the essence of our brand. The social media posts they created were not only visually stunning but also highly effective in engaging our audience and promoting our services.
+                                </p>
+                            </div> <!-- end testimonial-slider__slide -->
+    
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/userimage.png" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Mr Noman Afridi</strong>
+                                        <span>CEO, London Star</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    "Collaborating with Genzic has been a game-changer for London Star. They played a pivotal role in designing and developing our sleek e-commerce website, ensuring a seamless shopping experience for our customers. Their ability to blend user-friendly design with a luxurious aesthetic truly reflects the essence of our brand.
+
+                                    In addition to the website, the social media posts and branding work done by Genzic has significantly enhanced our online presence, engaging our audience and showcasing our products beautifully. Their attention to detail, creativity, and professionalism have been invaluable, and we’re excited to continue this partnership moving forward."
+                                </p>
+                            </div> <!-- end testimonial-slider__slide -->
+        
+                        </div> <!-- end swiper-wrapper -->
+    
+                        <div class="swiper-pagination"></div>
+    
+                    </div> <!-- end swiper-container -->
+    
+                </div> <!-- end column -->
+            </div> <!-- end row testimonials -->
+
+        </section> <!-- end s-works -->
+
+
+        <!-- ## contact
+        ================================================== -->
+        <section id="contact" class="s-contact target-section">
+
+            <div class="row section-header section-header--dark"">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Get In Touch</h3>
+                    <h1 class="text-display-title">
+                        Do you have an idea or an epic project in mind? Let’s work together.
+                    </h1>
+                </div>
+            </div>
+
+            <!-- form -->
+            <div style="width: 100%; display: flex; flex-direction: column ;  align-items: center;"  class="column lg-6 tab-12">
+
+                <!-- <h3 class="u-add-bottom">Form Styles</h3> -->
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="fa214e88-cd33-4231-9410-5a980d1cd6a1">
+                    <div>
+                        <label for="email">Your email</label>
+                        <input class="u-fullwidth" name="email" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                    </div>
+                    <div>
+                        <label for="resonforcontactcting">Reason for contacting</label>
+                        <div class="ss-custom-select">
+
+                            <select name="resonforcontactcting" class="u-fullwidth" id="sampleRecipientInput">
+                                <option value="Website Development">Website Development</option>
+                                <option value="Graphic Designing">Graphic Designing</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                
+                                <option value="Video Edithing">Video Editing</option>
+                                
+                                <option value="Wordpresswebsite">Wordpres Website Development</option>
+                                <option value="Documentry">Documentry </option>
+                                <option value="Other">Other </option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <label for="clientMessage">Message</label>
+                    <textarea  name="clientMessage" class="u-fullwidth" placeholder="Your message" id="exampleMessage"></textarea>
+
+                    <!-- <label class="u-add-bottom">
+                        <input type="checkbox">
+                        <span class="label-text">Send a copy to yourself</span>
+                    </label> -->
+                
+                    <input class="btn--primary u-fullwidth" type="submit" value="Submit">
+                </form>
+
+            </div>
+
+
+            <div class="row row-x-center text-center s-contact__content">
+                <div class="column lg-12">
+                    <p class="lead">
+                        We'd love to hear from you! Whether you're looking to elevate your brand, need help with web development, or want to discuss a digital marketing strategy, feel free to reach out. Drop me an email directly, and I'll get back to you as soon as possible.
+                     </p>
+                    <div class="btn-wrap">
+                        <a href="mailto:genzic54@gmail.com" class="btn btn--primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"></path></svg>
+                            Write An Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="s-footer">
+
+                <div class="row s-footer__top">
+                    <div class="column lg-5 md-8 stack-on-700 s-footer__block contact-address">
+                        <h4 class="h6">Let's Get Started!</h4>
+                        <img style="width: 20rem;" src="./images/icons/clients/1.svg" alt="" srcset="">
+        
+                        <p>
+                       Conatct Us Today <br>
+                        </p>
+                    </div>
+
+                    <div class="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
+                        <h4 class="h6">Follow Us</h4>
+        
+                        <ul class="contact-list">
+                            <li><a  onmouseover="this.style.color='red'" 
+                                onmouseout="this.style.color='white'" 
+                                style="color: rgb(213, 213, 215); text-decoration: none;"  target="_blank" href="https://www.instagram.com/gen_zic/">Instagram</a></li>
+                            <li><a onmouseover="this.style.color='blue'" 
+                                onmouseout="this.style.color='white'" 
+                                style="color: rgb(213, 213, 215); text-decoration: none;" target="_blank" href="https://www.facebook.com/Genzic0/" >Facebook</a></li>
+                            <li><a onmouseover="this.style.color='grey'" 
+                                onmouseout="this.style.color='white'" 
+                                style="color: rgb(213, 213, 215); text-decoration: none;" target="_blank" href="https://www.threads.net/@gen_zic/">Threads</a></li>
+                            
+                        </ul>
+                    </div>
+        
+                    <div class="column lg-3 md-12 s-footer__block contact-number">
+                        <h4 class="h6">Contact Us</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="mailto:#0">genzic54@gmail.com</a></li>
+                            <li><a href="tel:+92 342 4808876">+92 342 4808876</a></li>
+                            
+                        </ul>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+                <div class="row s-footer__bottom">
+                    <div class="column ss-copyright">
+                        <span>© Copyright Genzic 2021</span> 
+                        <span>Design by <a href="https://www.instagram.com/zikriyeah/">zikriyeah</a></span>
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <span class="ss-go-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                            </span>
+                            <span class="ss-go-top__text">Back to Top</span>
+                        </a>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+            </footer>
+
+        </section> <!-- end s-contact -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
