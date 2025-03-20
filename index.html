@@ -126,7 +126,45 @@
 
             <div class="row row-x-center s-intro__about-wrap">
                 <div class="column s-intro__about">
-                    <h2 class="s-intro__about-title">Hello, We Are <span style="color: #C966F4;" >Genzic</span> .</h2>
+                    <h2 class="s-intro__about-title">Hello, We  
+                        <!-- From Uiverse.io by Amine-maker --> 
+                        <div id="app">
+                          <div class="reference relative">
+                            <p class="main-title">
+                                Are
+                              <span style="font-style: italic; color: #400298" class="hover-card"
+                                >Genzic</span
+                              >, Pakistan
+                            </p>
+                            <div class="card absolute hidden">
+                              <div class="cloud"></div>
+                              <div class="cloud"></div>
+                              <div class="cloud"></div>
+                              <div class="cloud"></div>
+                              <div class="relative inner-card">
+                                <div class="bg-map"></div>
+                                <div class="location absolute"></div>
+                                <div class="elements">
+                                  <div class="description relative">
+                                    <div class="blur-item absolute"></div>
+                                    <span class="main-title">Pakistan</span>
+                                    <p class="second-title">Genzic</p>
+                                  </div>
+                                  <div class="details">
+                                    <div class="peoples">
+                                      <div class="people"></div>
+                                      <div class="people"></div>
+                                      <div class="people"></div>
+                                    </div>
+                                    <div class="action"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- uiver end -->
+                         <span style="color: #C966F4;" >Genzic</span> </h2>
 
                     <p>
                         From pixel-perfect designs to dynamic videos and high-performance websites—We bring your vision to life! <br> 
@@ -480,20 +518,39 @@
                 </div> <!-- end column -->
             </div> <!-- end clients-outer -->
 
-            <div class="video-block">
+            <!-- <div class="video-block">
                 <span class="video-block__bg-left"></span>
                 <span class="video-block__bg-right"></span>
 
                 <div class="video-block__content">
                     <a href="https://youtu.be/m1FS1Rpy7H0?si=2FNuYTAuI2y-XwzQ" class="video-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
-                    </a>
+                        </a>
 
                     <p class="video-caption">
                        Click to Watch Video
                     </p>
                 </div>
-            </div> <!-- end video-block -->
+            </div> -->
+             <!-- end video-block -->
+            <div style="display: flex; justify-content: center;flex-direction: column; align-items: center; ">
+               <a href="https://youtu.be/m1FS1Rpy7H0?si=2FNuYTAuI2y-XwzQ" target="_blank" rel="noopener noreferrer" style="width:100%; height: auto; display: flex;flex-direction: column; align-items: center;justify-content: center; " > <img style="width: 90%; height: auto;" src="./images/video-bg-01.jpg" alt="" srcset=""></a>
+               <!-- start -->
+               <div style="position: absolute ; align-self: center;justify-self: center; " class="video-block__content">
+                <!-- <a href="https://youtu.be/m1FS1Rpy7H0?si=2FNuYTAuI2y-XwzQ" class="video-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                </a> -->
+<!-- From Uiverse.io by 212004ALJI --> 
+<a  href="https://youtu.be/m1FS1Rpy7H0?si=2FNuYTAuI2y-XwzQ" target="_blank" rel="noopener noreferrer"><button>
+    Watch
+  </button>
+</a>            
+    <!-- <p class="video-caption">
+                   Click to Watch Video
+                </p> -->
+            </div>
+            <!-- end -->
+            </div>
 
             <div class="row testimonials" data-animate-block>
                 <div class="column lg-12">
@@ -577,7 +634,7 @@
         ================================================== -->
         <section id="contact" class="s-contact target-section">
 
-            <div class="row section-header section-header--dark"">
+            <div class="row section-header section-header--dark">
                 <div class="column lg-12">
                     <h3 class="text-pretitle">Get In Touch</h3>
                     <h1 class="text-display-title">
@@ -592,16 +649,17 @@
                 <!-- <h3 class="u-add-bottom">Form Styles</h3> -->
 
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="fa214e88-cd33-4231-9410-5a980d1cd6a1">
+                    <input type="hidden" name="access_key"  value="fa214e88-cd33-4231-9410-5a980d1cd6a1">
                     <div>
-                        <label for="email">Your email</label>
-                        <input class="u-fullwidth" name="email" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                        <label for="email">Your email (required)</label>
+                        <input class="u-fullwidth" required name="email" type="email" placeholder="test@mailbox.com" id="sampleInput">
                     </div>
                     <div>
-                        <label for="resonforcontactcting">Reason for contacting</label>
+                        <label for="resonforcontactcting">Reason for contacting (required)</label>
                         <div class="ss-custom-select">
 
-                            <select name="resonforcontactcting" class="u-fullwidth" id="sampleRecipientInput">
+                            <select name="resonforcontactcting" class="u-fullwidth" id="sampleRecipientInput" required>
+                                <option value="none">Select</option>
                                 <option value="Website Development">Website Development</option>
                                 <option value="Graphic Designing">Graphic Designing</option>
                                 <option value="Digital Marketing">Digital Marketing</option>
@@ -615,8 +673,8 @@
                         </div>
                     </div>
                     
-                    <label for="clientMessage">Message</label>
-                    <textarea  name="clientMessage" class="u-fullwidth" placeholder="Your message" id="exampleMessage"></textarea>
+                    <label for="clientMessage">Message (required) </label>
+                    <textarea required  name="clientMessage" class="u-fullwidth" placeholder="Your message" id="exampleMessage"></textarea>
 
                     <!-- <label class="u-add-bottom">
                         <input type="checkbox">
@@ -676,7 +734,7 @@
                         <h4 class="h6">Contact Us</h4>
         
                         <ul class="contact-list">
-                            <li><a href="mailto:#0">genzic54@gmail.com</a></li>
+                            <li><a href="mailto:genzic54@gmail.com">genzic54@gmail.com</a></li>
                             <li><a href="tel:+92 342 4808876">+92 342 4808876</a></li>
                             
                         </ul>
@@ -685,8 +743,8 @@
 
                 <div class="row s-footer__bottom">
                     <div class="column ss-copyright">
-                        <span>© Copyright Genzic 2021</span> 
-                        <span>Design by <a href="https://www.instagram.com/zikriyeah/">zikriyeah</a></span>
+                        <span>© Copyright Genzic 2025</span> 
+                        <span>Design by <a href="https://www.instagram.com/zikriyeah/">zikria w.</a></span>
                     </div>
 
                     <div class="ss-go-top">
