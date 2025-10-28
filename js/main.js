@@ -2,7 +2,7 @@
  * Tyndale 1.0.0 - Main JS
  *
  * ------------------------------------------------------------------- */
-import { inject } from "@vercel/analytics"
+
 (function(html) {
 
     'use strict';
